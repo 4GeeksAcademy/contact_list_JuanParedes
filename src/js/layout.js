@@ -9,6 +9,8 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import CurrentEdit from "./component/CurrentEdit.jsx";
+
 
 //create your first component
 const Layout = () => {
@@ -25,7 +27,9 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
-						<Route path="*" element={<h1>Not found!</h1>} />
+						<Route path="/contact" element={<CurrentEdit />} />
+						<Route path="/edit" element={<CurrentEdit />} />
+				
 					</Routes>
 					<Footer />
 				</ScrollToTop>
