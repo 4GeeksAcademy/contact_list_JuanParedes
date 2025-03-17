@@ -27,8 +27,8 @@ const Card = ({ id, name, email, phone, address }) => {
                             <button
                                 className="btn btn-primary"
                                 onClick={() => {
-                                
-                                    actions.setCurrentEdit(id, name, phone, email, address );
+                                    actions.setCurrentEdit({ id, name, phone, email, address });
+                                    
                                     navigate("/edit"); // Espera un momento antes de navegar
                                 }}
                             >

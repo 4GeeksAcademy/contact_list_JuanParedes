@@ -3,14 +3,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			contacts: [],
 			currentEdit:{},
-			setCurrentEdit: (contact) => {
+			// setCurrentEdit: (contact) => {
 	
-				setStore({ currentEdit: contact });
-			},
+			// 	setStore({ currentEdit: contact });
+			// },
 			
 
 		},
 		actions: {
+			setCurrentEdit: (contact) => {
+	
+				setStore({ currentEdit: contact });
+			},
 			
 			// Use getActions to call a function within a fuction
 			/*Obtener contactos creados*/
