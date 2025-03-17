@@ -1,22 +1,19 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			contacts: [],
-			currentEdit:{},
-			// setCurrentEdit: (contact) => {
-	
-			// 	setStore({ currentEdit: contact });
-			// },
+			contacts: [],// Lista donde se almacenarán los contactos.
+			currentEdit:{}, // Objeto donde se guardara temporalmente el contacto que se esta editando
+			
 			
 
 		},
 		actions: {
 			setCurrentEdit: (contact) => {
 	
-				setStore({ currentEdit: contact });
-			},
+				setStore({ currentEdit: contact }); //Esta función recibe un contacto y lo guarda en currentEdit.	Sirve para seleccionar un contacto antes de editarlo.
 			
-			// Use getActions to call a function within a fuction
+			},
+		
 			/*Obtener contactos creados*/
 			getContacts: async () => {
 				try {
